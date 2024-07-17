@@ -1,15 +1,26 @@
 import { TPalette } from "../../theme/config/types";
 import { ButtonWrapper } from "./styled";
+import { TButtonVariant } from "./types";
 
 interface ButtonProps {
   color?: keyof TPalette;
   fullWidth?: boolean;
   children: React.ReactNode;
+  variant?: TButtonVariant;
 }
 
-function Button({ color = "primary", fullWidth, children }: ButtonProps) {
+function Button({
+  color = "primary",
+  variant = "contained",
+  fullWidth,
+  children,
+}: ButtonProps) {
   return (
-    <ButtonWrapper color={color} fullWidth={Boolean(fullWidth)}>
+    <ButtonWrapper
+      variant={variant}
+      color={color}
+      fullWidth={Boolean(fullWidth)}
+    >
       {children}
     </ButtonWrapper>
   );
