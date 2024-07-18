@@ -7,8 +7,14 @@ export type TPaletteValue = {
 export type TPalette = {
   primary: TPaletteValue;
   secondary: TPaletteValue;
-  light: TPaletteValue;
-  dark: TPaletteValue;
+  light: {
+    main: string
+    dark: string
+  };
+  dark: {
+    light: string
+    main: string
+  };
   stone: {
     main: string;
   };
@@ -29,6 +35,7 @@ export type TMeasures = {
 export type TTypography = {
   Poppins: string;
   SansSerif: string;
+  Lora: string;
   main?: string;
 };
 
