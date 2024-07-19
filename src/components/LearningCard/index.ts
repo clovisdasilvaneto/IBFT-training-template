@@ -1,3 +1,3 @@
 import Learning from "../../containers/Learning";
 
-export default Learning
+export default Learning;
