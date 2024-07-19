@@ -10,6 +10,10 @@ export const DiscoveryWrapper = styled.section`
   background-size: cover;
 `;
 
+export const DiscoveryContainer = styled.div`
+    ${({ theme }) => theme.measures.container}
+`
+
 export const DiscoveryArticle = styled.article`
   height: auto;
   width: 59%;

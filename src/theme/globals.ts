@@ -1,4 +1,5 @@
 import { css } from "@emotion/react";
+import theme from ".";
 
 export const globals = css(`
     * {
@@ -8,6 +9,6 @@ export const globals = css(`
     body {
         margin: 0;
         padding: 0;
-        background: black;
+        background: ${theme.palette.dark.main};
     }    
 `);

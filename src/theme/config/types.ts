@@ -23,6 +23,7 @@ export type TPalette = {
 export type TMeasures = {
   baseline: number;
   radius: string;
+  container: string;
   breakpoints: {
     xs: number;
     sm: number;

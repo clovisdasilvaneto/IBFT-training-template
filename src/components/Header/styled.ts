@@ -1,12 +1,17 @@
 import styled from '@emotion/styled'
 
-export const NavComponent = styled.nav`
+export const HeaderWrapper = styled.header`
     background-color: ${({ theme }) => theme.palette.dark.main};
     padding: 18px 150px;
-    display: flex;
     position: sticky;
-    align-items: center;
+    top: 0;
     border-bottom: 1px solid ${({ theme }) => theme.palette.primary.light};
+`
+
+export const NavComponent = styled.nav`
+    display: flex;
+    align-items: center;
+    ${({ theme }) => theme.measures.container}
 `
 
 export const BrandImg = styled.img`
