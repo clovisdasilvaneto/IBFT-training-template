@@ -3,7 +3,6 @@ import Button from "../Button";
 
 export const DiscoveryFormWrapper = styled.div`
   width: 100%;
-  height: 100%;
   background: rgba(61, 61, 61, 0.36);
   padding: 20px;
   border-left: 1px solid white;

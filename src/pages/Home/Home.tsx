@@ -1,12 +1,12 @@
-import DiscoveryForm from "../../components/DiscoveryForm/DiscoveryForm";
 import Header from "../../components/Header";
+import Discovery from "../../containers/Discovery";
 import { HomeWrapper } from "./styled";
 
 function Home() {
   return (
     <HomeWrapper>
       <Header />
-      <DiscoveryForm />
+      <Discovery />
     </HomeWrapper>
   );
 }
