@@ -1,7 +1,7 @@
 import { TPalette, TTypography } from "../../theme/config/types";
 import { TypographyStyled } from "./styled";
 
-interface TypographyProps {
+export interface TypographyProps {
   children: any;
   component: any;
   color?: keyof TPalette;

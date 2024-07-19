@@ -3,6 +3,7 @@ import { ButtonWrapper } from "./styled";
 import { TButtonVariant } from "./types";
 
 export interface ButtonProps {
+  onClick: () => void;
   color?: keyof TPalette;
   fullWidth?: boolean;
   children: React.ReactNode;
@@ -12,6 +13,7 @@ export interface ButtonProps {
 
 function Button({
   className,
+  onClick,
   color = "primary",
   variant = "contained",
   fullWidth,
@@ -19,6 +21,7 @@ function Button({
 }: ButtonProps) {
   return (
     <ButtonWrapper
+      onClick={onClick}
       variant={variant}
       color={color}
       fullWidth={Boolean(fullWidth)}
