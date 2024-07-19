@@ -11,7 +11,7 @@ const palette = {
     main: "#fff",
   },
   dark: {
-    main: "#120E05",
+    main: "#070c1a",
   },
   stone: {
     main: "#646262d9",
