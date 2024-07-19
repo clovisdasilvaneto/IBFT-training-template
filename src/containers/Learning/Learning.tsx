@@ -46,13 +46,10 @@ function Learning() {
           description="Você vai conhecer o único caminho para ser um Terapeuta de Resultados, dando fim no sofrimento emocional e início a uma transformação na sua vida!"
         />
       </BoxWrapper>
-      <>
-        <Button
-          children={"SIM, QUERO PARTICIPAR!"}
-          variant="contained"
-          color="secondary"
-        />
-      </>
+
+      <Button variant="contained" color="secondary">
+        SIM, QUERO PARTICIPAR!
+      </Button>
     </LearningWrapper>
   );
 }

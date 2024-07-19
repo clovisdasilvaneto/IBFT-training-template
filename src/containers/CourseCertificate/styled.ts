@@ -3,12 +3,12 @@ import styled from "@emotion/styled";
 export const CourseCertificateWrapper = styled.section`
   display: flex;
   align-items: end;
-  justify-content: center;
-  margin: 0 0 0 10  0px;
+  justify-content: space-around;
   background: url("/BG-LOGO.webp") no-repeat center 100%;
   padding-top: 100px;
   padding-bottom: 80px;
-
+  
+  ${({ theme }) => theme.measures.container}
 
   img {
     transform: scale(1.12);

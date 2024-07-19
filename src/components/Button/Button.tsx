@@ -3,7 +3,7 @@ import { ButtonWrapper } from "./styled";
 import { TButtonVariant } from "./types";
 
 export interface ButtonProps {
-  onClick: () => void;
+  onClick?: () => void;
   color?: keyof TPalette;
   fullWidth?: boolean;
   children: React.ReactNode;

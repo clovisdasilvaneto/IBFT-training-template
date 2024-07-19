@@ -8,6 +8,7 @@ export const DiscoveryWrapper = styled.section`
   padding: 20px 20px 80px 20px;
   background-image: url("/BANNER-JPG-RGB-NORMAL.jpg");
   background-size: cover;
+  border-bottom: solid 1px ${({ theme }) => theme.palette.light.main};
 `;
 
 export const DiscoveryContainer = styled.div`

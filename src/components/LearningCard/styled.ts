@@ -5,17 +5,17 @@ display: flex;
 justify-content: flex-start;
 flex-direction: column;
 align-items: center;
-paddind 15px;
 row-gap: 15px;
-    border-radius: 7px;
-    border-right: 1px solid #f1f1f1;
-    border-left: 1px solid #f1f1f1;
-    padding: 10px;
-    flex-basis: 100%;
+border-radius: 7px;
+border-right: 1px solid #f1f1f1;
+border-left: 1px solid #f1f1f1;
+flex-basis: 100%;
 
 
-p{
-text-align: center;}
+  p{
+    text-align: center;
+    padding: 15px;
+  }
 
 `;
 
@@ -27,7 +27,8 @@ export const CardBox = styled.div`
 `;
 
 export const CardImageWrapper = styled.img`
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   margin: -4rem 0;
 `;
 
