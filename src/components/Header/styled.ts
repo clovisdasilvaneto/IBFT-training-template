@@ -5,6 +5,7 @@ export const HeaderWrapper = styled.header`
     padding: 18px 150px;
     position: sticky;
     top: 0;
+    z-index: 9;
     border-bottom: 1px solid ${({ theme }) => theme.palette.primary.light};
 `
 

@@ -1,4 +1,3 @@
-import React from "react";
 import { BrandImg, ClockTimeDiv, NavComponent, HeaderWrapper } from "./styled";
 import Brand from "../../assets/LOGO.webp";
 import Clock from "../Clock";

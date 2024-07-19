@@ -1,4 +1,5 @@
 import Header from "../../components/Header";
+import CourseCertificate from "../../containers/CourseCertificate";
 import Discovery from "../../containers/Discovery";
 import Learning from "../../containers/Learning";
 import { HomeWrapper } from "./styled";
@@ -9,6 +10,7 @@ function Home() {
       <Header />
       <Discovery />
       <Learning />
+      <CourseCertificate />
     </HomeWrapper>
   );
 }
