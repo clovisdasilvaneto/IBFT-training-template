@@ -1,10 +1,10 @@
-import DiscoveryForm from "../../components/DiscoveryForm/DiscoveryForm";
+import Discovery from "../../containers/Discovery";
 import { HomeWrapper } from "./styled";
 
 function Home() {
   return (
     <HomeWrapper>
-      <DiscoveryForm />
+      <Discovery />
     </HomeWrapper>
   );
 }
