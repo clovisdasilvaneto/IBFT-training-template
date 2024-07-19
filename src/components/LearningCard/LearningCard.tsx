@@ -1,41 +1,39 @@
-import { CardImageWrapper, CardWrapper, CardBox, CardTextWrapper } from "./styled"
-import imgUrl from '../../assets/img/AULA-01-NOVO.webp'
-import Typography from "../Typography"
+import { CardImageWrapper, CardWrapper, CardBox } from "./styled";
 
+import Typography from "../Typography";
 
-//function CardBox(props) {
-//   return(
-  //    <CardTitleWrapper>{props.children}</CardTitleWrapper> 
-    //)
-  //}
+function CardImage(props: any) {
+  return <CardImageWrapper src={props.image} alt="jairsFace" />;
+}
 
-  function CardImage(props) {
-    return(
-    <CardImageWrapper src={imgUrl}  alt="jairsFace" />)
-  }
+function CardNovo({ component, children }: any) {
+  return (
+    <CardBox>
+      <Typography component={component}>{children}</Typography>
+    </CardBox>
+  );
+}
 
-  function CardNovo({component, children}: any) {
-    return(
-      <CardBox>
+function LearningCard({
+  title,
+  date,
+  descriptionTitle,
+  description,
+  image,
+}: any) {
+  return (
+    <CardWrapper>
+      <CardNovo component="span">{title}</CardNovo>
 
-        <Typography component={component} >{children}</Typography>
-      </CardBox>
-    )
-  }
+      <CardImage image={image} />
+      <CardNovo component="span">{date}</CardNovo>
 
-  function LearningCard(props) {
-    return(
-      <CardWrapper>
-        <CardNovo component="span">AULA 1</CardNovo>
-      
-      <CardImage />
-      <CardNovo component="span">05/08 ÀS 20H</CardNovo>
-      
-      <Typography component="p" >QUALQUER PESSOA PODE SER TERAPEUTA?</Typography>
-      <Typography component="p" font="Poppins" >Você vai encontrar essa resposta e também vai ter um entendimento profundo sobre como você, seus pensamentos e suas emoções funcionam.</Typography>
-      </CardWrapper>
-    )
-  }
+      <Typography component="p">{descriptionTitle}</Typography>
+      <Typography component="p" font="Poppins">
+        {description}
+      </Typography>
+    </CardWrapper>
+  );
+}
 
-  export default LearningCard;
-
+export default LearningCard;

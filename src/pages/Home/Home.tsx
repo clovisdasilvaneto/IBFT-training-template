@@ -1,5 +1,6 @@
 import Header from "../../components/Header";
 import Discovery from "../../containers/Discovery";
+import Learning from "../../containers/Learning";
 import { HomeWrapper } from "./styled";
 
 function Home() {
@@ -7,6 +8,7 @@ function Home() {
     <HomeWrapper>
       <Header />
       <Discovery />
+      <Learning />
     </HomeWrapper>
   );
 }
